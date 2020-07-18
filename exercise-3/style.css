@@ -14,3 +14,5 @@ select{
     height: 24px;
     width: 240px;
 }
+
+input[list=sauces]{outline-color:  #c5e6f8;}

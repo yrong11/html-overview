@@ -19,26 +19,29 @@
         <label for="amount">How many patties would you like?</label>
         <br>
         <!--说明：在此添加一个input for 'amount'，type 为number -->
-
+        <input type="number" name="amount" id="amount">
     </section>
 
     <section class="cooked">
         <label for="doneness">How do you want your patty cooked</label>
         <br>
         <!--说明：在此添加一个input for 'doneness'，type: range, default value: 3, min: 0, max: 5, step: 1  -->
-
+        <label for="doneness">Rare</label>
+        <input type="range" name="doneness" id="doneness" value="3" min="0" max="5" step="0.1">
+        <label for="doneness">Well-Done</label>
     </section>
 
     <section class="toppings">
         <span>What toppings would you like?</span>
         <br>
         <!--说明：在此添加一个checkbox, name: topping, value: lettuce, id: lettuce -->
-
+        <input type="checkbox" name="topping"  id="lettuce" value="lettuce">
         <!--说明：在此添加一个label for 'lettuce', content: Lettuce -->
-
+        <label for="lettuce">Lettuce</label>
         <!--说明：在此添加一个checkbox, name: topping, value: tomato, id: tomato -->
-
+        <input type="checkbox" name="topping" id="tomato" value="tomato">
         <!--说明：在此添加一个label for 'tomato', content: Tomato-->
+        <label for="tomato">Tomato</label>
 
         <input type="checkbox" name="topping" id="onion" value="onion">
         <label for="onion">Onion</label>
@@ -48,10 +51,10 @@
         <span>Would you like to add cheese?</span>
         <br>
         <!--说明：在此添加一个radio, name: cheese, value: yes, id: yes -->
-
+        <input type="radio" name="cheese" value="yes" id="yes">
         <!--说明：在此添加一个label for 'yes' -->
-
-        <input type="radio" name="cheese" id="no" value="yes">
+        <label for="yes">Yes</label>
+        <input type="radio" name="cheese" id="no" value="no">
         <label for="no">No</label>
     </section>
 
@@ -59,6 +62,11 @@
         <label for="bun">What type of bun would you like?</label>
         <br>
         <!--说明：在此添加一个select, name: bun, option list: sesame, potato, Salad-->
+        <select name="bun" id="bun">
+            <option value="sesame">sesame</option>
+            <option value="potato">potato</option>
+            <option value="Salad">Salad</option>
+        </select>
 
     </section>
 
@@ -68,6 +76,11 @@
         <input list="sauces" id="sauce" name="sauce">
 
         <!--说明：在此添加一个datalist, option list: ketchup, mayo, Other-->
+        <datalist id="sauces">
+            <option value="ketchup">ketchup</option>
+            <option value="mayo">mayo</option>
+            <option value="Other">Other</option>
+        </datalist>
 
     </section>
 
@@ -75,12 +88,12 @@
         <label for="extra">Anything else you want to add?</label>
         <br>
         <!--说明：在此添加一个textarea, name:extra, rows: 3, cols:50-->
-
+        <textarea name="extra" id="extra" rows="3" cols="50"></textarea>
     </section>
 
     <section class="submission">
         <!--说明：在此添加一个input, type: submit, value: Submit -->
-
+        <input type="submit" value="Submit">
     </section>
 </form>
 </body>
